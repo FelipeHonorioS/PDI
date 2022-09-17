@@ -1,0 +1,26 @@
+# aula PDI 17/09/2022
+
+pkg load image
+I=imrotate(I,90);
+imshow(I);
+I=imrotate(I,-90);;
+I=imrotate(I,-90);
+imshow(I);
+Ig=rgb2gray(I);
+imshow(Ig);
+figure
+imshow(I);
+figure 
+imhist(I)
+figure
+imhist(Ig)
+J=histeq(Ig);
+figure
+inshow(J)
+figure
+imhist(J)
+Jeq=histeq(J);
+figure
+imhist(Jeq)
+figure
+imshow(Jeq)
